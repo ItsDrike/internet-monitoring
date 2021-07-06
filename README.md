@@ -40,7 +40,7 @@ If all works it should be available at <http://localhost:3030/d/o9mIe_Aik/intern
 - <http://localhost:9115> blackbox exporter endpoint. Lets you see what have failed/succeeded.
 - <http://localhost:9798/metrics> speedtest exporter endpoint. Does take about 30 seconds to show its result as it runs an actual speedtest when requested.
 
-## Editing gauge threshold colors
+## Editing the gauges
 
 Everyone has a bit different internet speed requirements and different standards of what's considered as fast, for that reason, you can simply click on the name of any of the gauges, and click edit 
 
