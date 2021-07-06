@@ -22,14 +22,14 @@ docker-compose up -d
 
 It will take a while until grafana loads, so be patient.
 
-The Grafana Dashboard will now be accessible via: `http://<Host IP Address>:3030` for example <http://localhost:3030>
+The Grafana Dashboard will now be accessible via: `http://<Host IP Address>:3000` for example <http://localhost:3000>
 
 username - admin
 password - admin (Password is stored in the `config.monitoring` env file)
 
 The DataSource and Dashboard for Grafana are automatically provisioned.
 
-If all works it should be available at <http://localhost:3030/d/o9mIe_Aik/internet-connection> - if no data shows up try change the timeduration to something smaller.
+If all works it should be available at <http://localhost:3000/d/o9mIe_Aik/internet-connection> - if no data shows up try change the timeduration to something smaller.
 
 ![image](https://user-images.githubusercontent.com/20902250/124660583-ecd7ef80-de95-11eb-89f4-cf4b87644f8b.png)
 
