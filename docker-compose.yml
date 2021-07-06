@@ -23,7 +23,7 @@ services:
     ports:
       - 9090:9090
     links:
-      - ping:ping
+      - blackbox:blackbox
       - speedtest:speedtest
     networks:
       - back-tier
@@ -44,7 +44,7 @@ services:
       - back-tier
       - front-tier
 
-  ping:
+  blackbox:
     tty: true
     stdin_open: true
     expose:

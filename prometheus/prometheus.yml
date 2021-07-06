@@ -21,14 +21,14 @@ scrape_configs:
     static_configs:
       - targets: ['speedtest:9798']
 
-  - job_name: 'ping'
+  - job_name: 'blackbox'
     metrics_path: /probe
-    scrape_interval: 5s # How often should we probe the pinghosts
+    scrape_interval: 15s   # How often should we probe the pinghosts
     params:
       module: [http_2xx]  # Look for a HTTP 200 response.
     file_sd_configs:
       - files:
-          - pinghosts.yaml
+          - blackbox.yaml
     relabel_configs:
       - source_labels: [__address__]
         regex: '(.*);(.*);(.*)'  # first is the url, thus unique for instance
@@ -45,8 +45,4 @@ scrape_configs:
       - source_labels: [instance]
         target_label: __param_target
       - target_label: __address__
-        replacement: ping:9115  # The blackbox exporter's real hostname:port.
-
-  - job_name: 'nodeexp'
-    static_configs:
-      - targets: ['nodeexp:9100']
+        replacement: blackbox:9115  # The blackbox exporter's real hostname:port.
