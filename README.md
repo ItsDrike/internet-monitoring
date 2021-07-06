@@ -29,9 +29,9 @@ password - admin (Password is stored in the `config.monitoring` env file)
 
 The DataSource and Dashboard for Grafana are automatically provisioned.
 
-If all works it should be available at<http://localhost:3030/d/o9mIe_Aik/internet-connection> - if no data shows up try change the timeduration to something smaller.
+If all works it should be available at <http://localhost:3030/d/o9mIe_Aik/internet-connection> - if no data shows up try change the timeduration to something smaller.
 
-<center><img src="images/dashboard.png" width="4600" heighth="500"></center>
+<center><img src="./images/dashboard.png" width="4600" heighth="500"></center>
 
 ## Interesting urls
 
@@ -39,6 +39,23 @@ If all works it should be available at<http://localhost:3030/d/o9mIe_Aik/interne
 - <http://localhost:9090/graph?g0.expr=probe_http_status_code&g0.tab=1> shows prometheus value for `probe_http_status_code` for each host. You can edit/play with additional values. Useful to check everything is okay in prometheus (in case Grafana is not showing the data you expect).
 - <http://localhost:9115> blackbox exporter endpoint. Lets you see what have failed/succeeded.
 - <http://localhost:9798/metrics> speedtest exporter endpoint. Does take about 30 seconds to show its result as it runs an actual speedtest when requested.
+
+## Editing gauge threshold colors
+
+Everyone has a bit different internet speed requirements and different standards of what's considered as fast, for that reason, you can simply click on the name of any of the gauges, and click edit 
+
+![image](https://user-images.githubusercontent.com/20902250/124659575-a59d2f00-de94-11eb-950e-b7dcb5a1d56a.png). 
+
+An edit menu will show where in the left pannel you can configure the minimum and maximum values shown on the gauge: 
+
+![image](https://user-images.githubusercontent.com/20902250/124659786-dc734500-de94-11eb-9e02-e3f73e8b8c33.png)
+
+You can also edit the color thresholds depending on the speeds to your liking (i.e. you can set after which point should the color become red/orange/...). Note that with the download/upload gauges you will need to enter the speed in bytes per second, not megabites!
+
+![image](https://user-images.githubusercontent.com/20902250/124659934-0fb5d400-de95-11eb-9cef-28c2c8033bf8.png)
+
+
+
 
 ## Thanks and a disclaimer
 
