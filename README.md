@@ -31,7 +31,7 @@ The DataSource and Dashboard for Grafana are automatically provisioned.
 
 If all works it should be available at <http://localhost:3030/d/o9mIe_Aik/internet-connection> - if no data shows up try change the timeduration to something smaller.
 
-<center><img src="./images/dashboard.png" width="4600" heighth="500"></center>
+![image](https://user-images.githubusercontent.com/20902250/124660583-ecd7ef80-de95-11eb-89f4-cf4b87644f8b.png)
 
 ## Interesting urls
 
@@ -44,18 +44,15 @@ If all works it should be available at <http://localhost:3030/d/o9mIe_Aik/intern
 
 Everyone has a bit different internet speed requirements and different standards of what's considered as fast, for that reason, you can simply click on the name of any of the gauges, and click edit 
 
-![image](https://user-images.githubusercontent.com/20902250/124659575-a59d2f00-de94-11eb-950e-b7dcb5a1d56a.png). 
+<img src="https://user-images.githubusercontent.com/20902250/124659575-a59d2f00-de94-11eb-950e-b7dcb5a1d56a.png" width="400">
 
 An edit menu will show where in the left pannel you can configure the minimum and maximum values shown on the gauge: 
 
-![image](https://user-images.githubusercontent.com/20902250/124659786-dc734500-de94-11eb-9e02-e3f73e8b8c33.png)
+<img src="https://user-images.githubusercontent.com/20902250/124659786-dc734500-de94-11eb-9e02-e3f73e8b8c33.png" width="400">
 
 You can also edit the color thresholds depending on the speeds to your liking (i.e. you can set after which point should the color become red/orange/...). Note that with the download/upload gauges you will need to enter the speed in bytes per second, not megabites!
 
-![image](https://user-images.githubusercontent.com/20902250/124659934-0fb5d400-de95-11eb-9cef-28c2c8033bf8.png)
-
-
-
+<img src="https://user-images.githubusercontent.com/20902250/124659934-0fb5d400-de95-11eb-9cef-28c2c8033bf8.png" width="400">
 
 ## Thanks and a disclaimer
 
