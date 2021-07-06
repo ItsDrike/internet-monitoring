@@ -2,5 +2,4 @@
     - https://google.com/;Google;external
     - https://github.com/;GitHub;external
     - https://ping.archlinux.org/;ArchLinux;external
-    - 192.168.0.1:1024/;Router;internal
-    - 192.168.0.107:8006/;Proxmox;internal
+    - http://192.168.0.1:1024/;Router;internal
