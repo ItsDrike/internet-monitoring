@@ -16,14 +16,14 @@ scrape_configs:
 
   - job_name: 'speedtest'
     metrics_path: /metrics
-    scrape_interval: 30m
+    scrape_interval: 30m # How often should we run speed tests
     scrape_timeout: 60s  # running speedtest needs time to complete
     static_configs:
       - targets: ['speedtest:9798']
 
   - job_name: 'ping'
     metrics_path: /probe
-    scrape_interval: 5s
+    scrape_interval: 5s # How often should we probe the pinghosts
     params:
       module: [http_2xx]  # Look for a HTTP 200 response.
     file_sd_configs:
