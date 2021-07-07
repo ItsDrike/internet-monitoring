@@ -70,8 +70,8 @@ Simply click on Copy JSON to clipboard and paste it to [`./grafana/provisioning/
 
 ## Thanks and a disclaimer
 
-- Thanks to @maxandersen for making the [original project](https://github.com/maxandersen/internet-monitoring) this fork is based on.
-- Thanks to @geerlingguy for perfecting the original project with a [custom fork](https://github.com/geerlingguy/internet-pi/tree/master/internet-monitoring).
-- Thanks to @goddenrich for perfecting the original project with a [custom fork](https://github.com/goddenrich/local-network-monitoring)
+- Thanks to [`@maxandersen`](https://github.com/maxandersen) for making the [original project](https://github.com/maxandersen/internet-monitoring) this fork is based on.
+- Thanks to [`@geerlingguy`](https://github.com/geerlingguy) for perfecting the original project with a [custom fork](https://github.com/geerlingguy/internet-pi/tree/master/internet-monitoring).
+- Thanks to [`@goddenrich`](https://github.com/goddenrich) for perfecting the original project with a [custom fork](https://github.com/goddenrich/local-network-monitoring).
 
 This setup is not secured in any way, so please only use on non-public networks, or find a way to secure it on your own.
