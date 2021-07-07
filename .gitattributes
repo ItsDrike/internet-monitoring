@@ -1,0 +1,2 @@
+# Ensure all files use LF as end-of-line character, not CRLF.
+* text=auto
