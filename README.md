@@ -27,7 +27,7 @@ docker-compose up -d
 
 It will take a while until grafana loads, so be patient, after it does, it will be accessible via: `http://<Host IP Address>:3000` (default credentials are username: admin, password: admin).
 
-If all works you should see 2 dashboards after clicking on Search button in the left navbar: 
+If all works you should see 2 dashboards after clicking on Search button in the left navbar:
 
 <img src=https://user-images.githubusercontent.com/20902250/124680714-7e575980-deb6-11eb-83ff-929151c0b59b.png height="120">
 
