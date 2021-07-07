@@ -272,7 +272,7 @@
           "refId": "A"
         }
       ],
-      "title": "Speedtest Ping",
+      "title": "Ping",
       "type": "gauge"
     },
     {
@@ -358,7 +358,7 @@
           "refId": "A"
         }
       ],
-      "title": "Speedtest Jitter",
+      "title": "Jitter",
       "type": "gauge"
     },
     {
@@ -615,7 +615,7 @@
           "refId": "A"
         }
       ],
-      "title": "Uptime",
+      "title": "BlackBox Uptime",
       "tooltip": {
         "extraInfo": "",
         "freezeOnClick": true,
@@ -654,7 +654,7 @@
     "list": []
   },
   "time": {
-    "from": "now-5m",
+    "from": "now-3h",
     "to": "now"
   },
   "timepicker": {
@@ -685,5 +685,5 @@
   "timezone": "browser",
   "title": "Internet connection",
   "uid": "NLDu4qznk",
-  "version": 2
+  "version": 1
 }
