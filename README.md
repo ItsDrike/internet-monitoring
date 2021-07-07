@@ -38,6 +38,14 @@ If all works you should see 2 dashboards after clicking on Search button in the 
 - <http://localhost:9090/targets> shows status of monitored targets as seen from prometheus - in this case which hosts being pinged and speedtest. note: speedtest will take a while before it shows as UP as it takes about 30s to respond.
 - <http://localhost:9090/graph?g0.expr=probe_http_status_code&g0.tab=1> shows prometheus value for `probe_http_status_code` for each host. You can edit/play with additional values. Useful to check everything is okay in prometheus (in case Grafana is not showing the data you expect).
 
+## Resetting stored data
+
+All of the data from grafana and prometheus are stored using docker volumes, you will need to remove those in order to wipe the data:
+
+1. Stop the application: `docker-compose down`
+2. See all of the volumes `docker volume ls`
+3. Remove unused ones `docker volume prune` (NOTE: this will remove all unused volumes, not just those from this project, if you have other volumes which you want to preserve use `docker volume rm [volume id 1] [volume id 2] ...` instead!)
+
 ## Editing the gauges
 
 Everyone has a bit different internet speed requirements and different standards of what's considered as fast, for that reason, you can simply click on the name of any of the gauges, and click edit
