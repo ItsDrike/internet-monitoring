@@ -1,0 +1,16 @@
+# Editor project settings
+## VSCode
+.vscode/
+## PyCharm intellij
+.idea/
+## repl.it
+.replit
+## Spyder
+.spyproject/
+.spyderproject/
+
+# Backup files
+*.bak
+
+# Personal TODO files
+TODO
