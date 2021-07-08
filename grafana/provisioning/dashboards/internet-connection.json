@@ -306,15 +306,15 @@
               },
               {
                 "color": "yellow",
-                "value": 3
+                "value": 2
               },
               {
                 "color": "orange",
-                "value": 8
+                "value": 5
               },
               {
                 "color": "red",
-                "value": 15
+                "value": 10
               }
             ]
           },
@@ -685,5 +685,5 @@
   "timezone": "browser",
   "title": "Internet connection",
   "uid": "NLDu4qznk",
-  "version": 1
+  "version": 2
 }
